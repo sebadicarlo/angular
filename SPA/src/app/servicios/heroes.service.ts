@@ -57,6 +57,10 @@ export class HeroesService {
       public getHeroes():Heroe[]{
         return this.heroes;
       }
+
+      public getHeroe(idx:string){
+        return this.heroes[idx];
+      }
     
 
     constructor(){
