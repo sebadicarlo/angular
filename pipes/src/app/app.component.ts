@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { promise } from 'protractor';
-import { reject } from 'q';
-import { resolve } from 'url';
 
 @Component({
   selector: 'app-root',
