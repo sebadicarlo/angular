@@ -17,7 +17,7 @@
       <td>{{ nombre }}</td>
       <td>lowercase</td>
       <td>{{ nombre | lowercase}}</td>
-    </tr>  
+    </tr>
     <tr>
       <td>{{ nombre }}</td>
       <td>slice:3</td>
@@ -27,7 +27,7 @@
       <td>{{ nombre }}</td>
       <td>slice:0:3 </td>
       <td>{{ nombre | slice:0:3 }}</td>
-    </tr> 
+    </tr>
     <tr>
       <td>{{ arreglo }}</td>
       <td>slice:1:5 </td>
@@ -37,7 +37,7 @@
       <td>{{ PI }}</td>
       <td>number:'3.0-0' </td>
       <td>{{ PI | number:'3.0-0' }}</td>
-    </tr> 
+    </tr>
     <tr>
       <td>{{ PI }}</td>
       <td>number:'1.0-2' </td>
@@ -78,7 +78,32 @@
       <td>async </td>
       <td>{{ valorDePromesa | async }}</td>
     </tr>
-  </tbody>  
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date </td>
+      <td>{{ fecha | date }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'medium' </td>
+      <td>{{ fecha | date:'medium' }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'MMMM dd' </td>
+      <td>{{ fecha | date:'MMMM dd' }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> capitalizado </td>
+      <td>{{ nombre2 | capitalizado }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> capitalizado:false </td>
+      <td>{{ nombre2 | capitalizado:false }}</td>
+    </tr>
+  </tbody>
 </table>
 <h4>Slice</h4>
   <ul>
@@ -86,7 +111,9 @@
       {{ item }}
     </li>
   </ul>
-  <h4>Json</h4>
-  <pre>{{ heroe | json }}</pre>  
+<h4>Json</h4>
+  <pre>{{ heroe | json }}</pre>
+<h4>Youtube</h4>
+<iframe width="854" height="480" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br><br><br><br><br><br><br><br><br><br>
 </div>
