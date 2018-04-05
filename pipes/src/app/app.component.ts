@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   nombre:string="Sebastian";
   nombre2:string="SebAstIan Di cARlo";
-
+  activar:boolean=false;
   arreglo=[1,2,3,4,5,6,7,8,9,10];
 
   PI=Math.PI;

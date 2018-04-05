@@ -103,6 +103,15 @@
       <td> capitalizado:false </td>
       <td>{{ nombre2 | capitalizado:false }}</td>
     </tr>
+    <tr>
+      <td>{{ nombre }}</td>
+      <td>
+        Contrasena: {{ activar }}
+        <br>
+        <button type="button" class="btn btn-outline-primary" (click)="activar=!activar" >Mostrar/Ocultar</button>
+      </td>
+      <td>{{ nombre | contrasena:activar }}</td>
+    </tr>
   </tbody>
 </table>
 <h4>Slice</h4>
