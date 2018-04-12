@@ -5,9 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-
-
+import {NavbarComponent} from './components/shared/navbar/navbar.component';
+import {app_routing} from './app.routes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +15,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]
